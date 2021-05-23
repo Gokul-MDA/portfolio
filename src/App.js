@@ -1,24 +1,33 @@
-import React from 'react'
-import Header from './components/header/Header'
-import ProjectContainer from './components/ProjectContainer/ProjectContainer'
-import SkillContainer from './components/SkillContainer/SkillContainer'
-import TopContainer from './components/TopContainer/TopContainer'
-import "./App.css"
-import ExperienceContainer from "./components/ExperienceContainer/ExperienceContainer"
-import Contact from './components/Contact/Contact'
+import React, { useState } from 'react';
+import Header from "./components/Header";
+import ProjectContainer from './components/ProjectContainer';
+import SkillContainer from './components/SkillContainer';
+import TopContainer from './components/TopContainer';
+import "./App.css";
+import ExperienceContainer from "./components/ExperienceContainer";
+import Contact from './components/Contact';
+import Dropdown from "./components/Dropdown";
 
 
-const App = () => {
+function App() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <div>
-      <Header />
+    <>
+      <Header toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} />
       <TopContainer />
       <SkillContainer />
       <ProjectContainer />
       <ExperienceContainer />
       <Contact />
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
