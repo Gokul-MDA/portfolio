@@ -10,6 +10,7 @@ const TopContainerCss = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -80px;
     /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); */
 
     @media screen and (max-width: 768px) {

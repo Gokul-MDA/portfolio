@@ -48,8 +48,8 @@ const ProjectContainerProjects = styled.div`
     display: flex !important;
     flex-direction: row !important;
     margin-top: 50px;
-    margin-left: 50px ;
-    column-gap: 30px;
+    margin-left: 30px ;
+    column-gap: 10px;
     row-gap: 30px;
     flex-wrap: wrap;
 
