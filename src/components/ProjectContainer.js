@@ -71,25 +71,25 @@ const ProjectContainer = () => {
             img: portfolio,
             title: "PortFolio Website for frontEndDev",
             desc: "My Portfolio site, Responsive for both mobile and computer",
-            link: "gokul-portfolio.netlify.app"
+            link: "https://gokul-portfolio.netlify.app"
         },
         {
             img: realestate,
             title: "Real-Estate",
             desc: "Real Estate Chennai - Browse residential properties for sale in Chennai - New Projects, Resale Flats, Ready To Move in Apartments. 100% Verified Listings ",
-            link: "rea-estate.netlify.app"
+            link: "https://rea-estate.netlify.app"
         },
         {
             img: oyo,
             title: "OyoRooms",
             desc: "OYOrooms it is a room booking software",
-            link: "oyorooms-clone.netlify.app"
+            link: "https://oyorooms-clone.netlify.app"
         },
         {
             img: portfolio2,
             title: "PortFolio Website for frontEndDev",
             desc: "My Portfolio site, Responsive for both mobile and computer",
-            link: "gokul-portfolio.netlify.app"
+            link: "https://gokul-portfolio.netlify.app"
         },
 
     ];
