@@ -100,7 +100,7 @@ const TopContent = () => {
         <h1>
           I'm <span>Gokul</span>
         </h1>
-        <h2>A Professional FrontEND Developer</h2>
+        <h2>A FreeLancing Frontend Developer</h2>
         <ButtonGrp>
           <a href="www.google.com">
             <DownloadBtn>Resume</DownloadBtn>
