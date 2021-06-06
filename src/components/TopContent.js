@@ -9,7 +9,7 @@ const TopContentCss = styled.div`
 
 const TopContentContainer = styled.div`
   position: absolute;
-  top: 300px;
+  top: 275px;
   left: 100px;
   p {
     letter-spacing: 1px;

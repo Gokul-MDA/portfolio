@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
 
 const DropdownContainer = styled.div`
   position: fixed;

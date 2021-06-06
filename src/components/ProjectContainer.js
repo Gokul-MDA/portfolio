@@ -4,8 +4,8 @@ import { Element } from "react-scroll";
 import styled from "styled-components";
 import realestate from "../images/realestate.png";
 import portfolio from "../images/portfolio.png";
-import portfolio2 from "../images/portfolio2.png";
 import oyo from "../images/oyo.png";
+import tesla from "../images/tesla.png";
 
 const ProjectContainerCss = styled.div`
   display: flex;
@@ -87,10 +87,10 @@ const ProjectContainer = () => {
       link: "https://oyorooms-clone.netlify.app",
     },
     {
-      img: portfolio2,
-      title: "PortFolio Website for frontEndDev",
-      desc: "My Portfolio site, Responsive for both mobile and computer",
-      link: "https://gokul-portfolio.netlify.app",
+      img: tesla,
+      title: "tesla clone website",
+      desc: "My Portfolio site, Responsive for both mobile and computelanding page only",
+      link: "https://jovial-payne-38da49.netlify.app/",
     },
   ];
   return (

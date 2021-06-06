@@ -4,7 +4,7 @@ import ProjectContainer from "./components/ProjectContainer";
 import SkillContainer from "./components/SkillContainer";
 import TopContainer from "./components/TopContainer";
 import "./App.css";
-import ExperienceContainer from "./components/ExperienceContainer";
+// import ExperienceContainer from "./components/ExperienceContainer";
 import Contact from "./components/Contact";
 import Dropdown from "./components/Dropdown";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import styled from "styled-components";
 import Bars from "../images/bars.svg";
 
