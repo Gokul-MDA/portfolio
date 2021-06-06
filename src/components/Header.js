@@ -9,11 +9,10 @@ const HeaderCss = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #161a1e;
-  border-bottom: 1px solid #5d37bd;
-  top: 0;
+  top: 10;
   position: sticky;
   z-index: 2000;
+  /* display: none; */
 
   @media screen and (max-width: 768px) {
     background-color: transparent;
@@ -21,31 +20,40 @@ const HeaderCss = styled.div`
   }
 `;
 
-const HeaderMenu = styled.div`
-  display: flex;
-  gap: 60px;
+// const HeaderMenu = styled.div`
+//   display: flex;
+//   gap: 60px;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+//   @media screen and (max-width: 768px) {
+//     display: none;
+//   }
 
-  h4 {
-    font-size: 18px;
-    cursor: pointer;
-    font-family: "Crimson Text" serif;
-    letter-spacing: 1px;
-  }
+//   h4 {
+//     font-size: 18px;
+//     cursor: pointer;
+//     font-family: "Crimson Text" serif;
+//     letter-spacing: 1px;
+//   }
 
-  h4:hover {
-    border-bottom: 4px solid #5d37bd;
-    color: white;
-    font-family: "Crimson Text" serif;
-    cursor: pointer;
-  }
-`;
+//   h4:hover {
+//     border-bottom: 4px solid #5d37bd;
+//     color: white;
+//     font-family: "Crimson Text" serif;
+//     cursor: pointer;
+//   }
+// `;
 
 const MenuBars = styled.div`
-  display: none;
+  display: block;
+  background-image: url(${Bars});
+  background-size: Contain;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 0.5;
+  right: 0;
+  transform: translate(-50%, 25%);
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -65,7 +73,7 @@ const Header = ({ toggle }) => {
   return (
     <HeaderCss>
       <MenuBars onClick={toggle}></MenuBars>
-      <HeaderMenu>
+      {/* <HeaderMenu>
         <Link to="about" smooth={true} duration={500}>
           <h4>About</h4>
         </Link>
@@ -81,7 +89,7 @@ const Header = ({ toggle }) => {
         <Link to="contact" smooth={true} duration={500}>
           <h4>Contact</h4>
         </Link>
-      </HeaderMenu>
+      </HeaderMenu> */}
     </HeaderCss>
   );
 };
