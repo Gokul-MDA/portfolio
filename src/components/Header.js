@@ -51,7 +51,7 @@ const MenuBars = styled.div`
   width: 40px;
   cursor: pointer;
   position: fixed;
-  top: 0.5;
+  top: 0.5rem;
   right: 0;
   transform: translate(-50%, 25%);
 
@@ -63,7 +63,7 @@ const MenuBars = styled.div`
     width: 40px;
     cursor: pointer;
     position: fixed;
-    top: 0;
+    top: 0.5rem;
     right: 0;
     transform: translate(-50%, 25%);
   }

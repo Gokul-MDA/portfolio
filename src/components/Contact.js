@@ -10,6 +10,7 @@ const ContactCss = styled.div`
   color: black;
   justify-content: center;
   align-items: center;
+  background-color: black;
 
   h1 {
     margin-top: 50px;

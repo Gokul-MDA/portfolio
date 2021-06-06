@@ -9,7 +9,7 @@ const TopContentCss = styled.div`
 
 const TopContentContainer = styled.div`
   position: absolute;
-  top: 250px;
+  top: 300px;
   left: 100px;
   p {
     letter-spacing: 1px;
@@ -31,6 +31,7 @@ const TopContentContainer = styled.div`
     width: 100%;
     top: 170px;
     left: 0;
+    margin-left: 20px;
   }
 `;
 

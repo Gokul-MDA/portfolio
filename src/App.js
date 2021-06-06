@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Header from "./components/Header";
-import ProjectContainer from './components/ProjectContainer';
-import SkillContainer from './components/SkillContainer';
-import TopContainer from './components/TopContainer';
+import ProjectContainer from "./components/ProjectContainer";
+import SkillContainer from "./components/SkillContainer";
+import TopContainer from "./components/TopContainer";
 import "./App.css";
 import ExperienceContainer from "./components/ExperienceContainer";
-import Contact from './components/Contact';
+import Contact from "./components/Contact";
 import Dropdown from "./components/Dropdown";
 
-
 function App() {
-
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>
@@ -24,7 +22,7 @@ function App() {
       <TopContainer />
       <SkillContainer />
       <ProjectContainer />
-      <ExperienceContainer />
+      {/* <ExperienceContainer /> */}
       <Contact />
     </>
   );

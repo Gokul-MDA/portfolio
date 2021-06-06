@@ -15,7 +15,7 @@ const DropdownContainer = styled.div`
   right: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  right: ${({ isOpen }) => (isOpen ? "0" : "-20%")};
 
   @media screen and (max-width: 768px) {
     position: fixed;
@@ -79,9 +79,9 @@ const Dropdown = ({ isOpen, toggle }) => {
           <Link to="projects" smooth={true} duration={500}>
             <h4>Projects</h4>
           </Link>
-          <Link to="exp" smooth={true} duration={500}>
+          {/* <Link to="exp" smooth={true} duration={500}>
             <h4>Experience</h4>
-          </Link>
+          </Link> */}
           <Link to="contact" smooth={true} duration={500}>
             <h4>Contact</h4>
           </Link>
