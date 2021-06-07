@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const ProjectCss = styled.div`
@@ -44,33 +44,33 @@ const ProjectImage = styled.div`
   }
 `;
 
-const ProjectContent = styled.div`
-  position: relative;
-  background-color: #5d37bd;
-  width: 375px;
-  height: 250px;
-  border-radius: 10px;
-  /* transform: perspective(600px) rotateY(180deg);
-  transition: transform 0.6s linear;
-  transform-style: preserve-3d;
-  backface-visibility: hidden; */
+// const ProjectContent = styled.div`
+//   position: relative;
+//   background-color: #5d37bd;
+//   width: 375px;
+//   height: 250px;
+//   border-radius: 10px;
+//   /* transform: perspective(600px) rotateY(180deg);
+//   transition: transform 0.6s linear;
+//   transform-style: preserve-3d;
+//   backface-visibility: hidden; */
 
-  h4 {
-    padding-bottom: 5px;
-  }
+//   h4 {
+//     padding-bottom: 5px;
+//   }
 
-  p {
-    font-size: 15px;
-  }
+//   p {
+//     font-size: 15px;
+//   }
 
-  @media screen and (max-width: 768px) {
-    width: 300px;
-    height: 150px;
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     width: 300px;
+//     height: 150px;
+//   }
+// `;
 
-const Project = ({ img, title, desc, link }) => {
-  const [show, setShow] = useState(false);
+const Project = ({ img, link }) => {
+  // const [show, setShow] = useState(false);
   return (
     <a href={link}>
       <div
@@ -79,16 +79,9 @@ const Project = ({ img, title, desc, link }) => {
       >
         <ProjectCss>
           <Project1>
-            {show ? (
-              <ProjectContent>
-                <h4>{title}</h4>
-                <p>{desc}</p>
-              </ProjectContent>
-            ) : (
-              <ProjectImage>
-                <img src={img} alt="" />
-              </ProjectImage>
-            )}
+            <ProjectImage>
+              <img src={img} alt="" />
+            </ProjectImage>
           </Project1>
         </ProjectCss>
       </div>
