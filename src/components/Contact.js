@@ -34,7 +34,7 @@ const ContactContainer = styled.div`
   }
 
   span {
-    color: red;
+    color: #c46867;
   }
 
   @media screen and (max-width: 768px) {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
+import pdf from "../resume.pdf";
 
 const TopContentCss = styled.div`
   color: white;
@@ -60,9 +61,9 @@ const Button = styled.div`
   text-align: center;
   margin: -7px;
 
-  Button:hover {
-    color: #f64c08;
+  &:hover {
     background-color: white;
+    color: #5d37bd;
     font-weight: 600;
   }
 
@@ -81,28 +82,29 @@ const DownloadBtn = styled(Link)`
   font-weight: 300;
   cursor: pointer;
 
+  &:hover {
+    background-color: white;
+    color: #5d37bd;
+    font-weight: 600;
+  }
+
   @media screen and (max-width: 768px) {
     width: 100px;
   }
 `;
 
-// .topContent__myWorkButton:hover {
-//     color: black;
-//     background-color: white;
-//     font-weight: 600;
-// }
-
 const TopContent = () => {
   return (
     <TopContentCss>
       <TopContentContainer>
+        {/* <iframe src={pdf} type="application/pdf" height={500} width={300} /> */}
         <h1>Hi,</h1>
         <h1>
           I'm <span>Gokul</span>
         </h1>
         <h2>A FreeLancing Frontend Developer</h2>
         <ButtonGrp>
-          <a href="www.google.com">
+          <a href={pdf} download="Gokul-resume.pdf">
             <DownloadBtn>Resume</DownloadBtn>
           </a>
           <Link to="projects" smooth={true} duration={500}>
