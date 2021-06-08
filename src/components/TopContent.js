@@ -31,7 +31,6 @@ const TopContentContainer = styled.div`
     width: 100%;
     top: 170px;
     left: 0;
-    margin-left: 20px;
   }
 `;
 

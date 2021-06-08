@@ -1,7 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { IconButton } from "@material-ui/core";
-import { Facebook, Instagram, LinkedIn } from "@material-ui/icons";
+import { Facebook, Instagram, LinkedIn, GitHub } from "@material-ui/icons";
 import styled from "styled-components";
 
 const ContactCss = styled.div`
@@ -25,7 +25,6 @@ const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
 
   p {
     font-size: 20px;
@@ -65,11 +64,11 @@ const Contact = () => {
           <p>
             Email : <span>gokul.mda@gmail.com</span>
           </p>
-          <p>
+          {/* <p>
             Github Username : <span>@Gokul-MDA</span>
-          </p>
+          </p> */}
           <ContactIcons>
-            <a href="https://www.linkedin.com/in/gokul-d-9384321a0/">
+            <a href="https://www.linkedin.com/in/gokul-d-b3a969213/">
               <IconButton>
                 <LinkedIn />
               </IconButton>
@@ -82,6 +81,11 @@ const Contact = () => {
             <a href="https://www.instagram.com/go__cool17/">
               <IconButton>
                 <Instagram />
+              </IconButton>
+            </a>
+            <a href="https://github.com/Gokul-MDA">
+              <IconButton>
+                <GitHub />
               </IconButton>
             </a>
           </ContactIcons>
