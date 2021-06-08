@@ -1,0 +1,29 @@
+.buttonGrp {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.downloadBtn {
+  width: 50px;
+  color: rgb(252, 235, 235);
+  background-color: transparent;
+  border: 2px solid #5d37bd !important;
+  font-size: 14px;
+  padding: 10px 55px;
+  font-family: "Monserrat", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.downloadBtn:hover {
+  background-color: white;
+  color: #5d37bd;
+  font-weight: 600;
+}
+
+/* @media screen and (max-width: 768px) {
+  .downloadBtn {
+    margin-left: 10px;
+  }
+} */

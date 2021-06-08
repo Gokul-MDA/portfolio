@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import pdf from "../resume.pdf";
+import "./TopContent.css";
 
 const TopContentCss = styled.div`
   color: white;
@@ -12,6 +13,11 @@ const TopContentContainer = styled.div`
   position: absolute;
   top: 275px;
   left: 100px;
+  iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   p {
     letter-spacing: 1px;
     text-align: left;
@@ -44,11 +50,11 @@ const TopContentContainer = styled.div`
 //     outline: none;
 // }
 
-const ButtonGrp = styled.div`
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`;
+// const ButtonGrp = styled.div`
+//   margin-top: 30px;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+// `;
 
 const Button = styled.div`
   color: white;
@@ -59,7 +65,7 @@ const Button = styled.div`
   font-weight: 300;
   cursor: pointer;
   text-align: center;
-  margin: -7px;
+  /* margin: -7px; */
 
   &:hover {
     background-color: white;
@@ -68,49 +74,50 @@ const Button = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 100px;
+    margin-right: 20px;
   }
 `;
 
-const DownloadBtn = styled(Link)`
-  color: white;
-  background-color: transparent;
-  border: 1px solid #5d37bd !important;
-  font-size: 14px;
-  padding: 10px 55px;
-  font-family: "Monserrat", sans-serif;
-  font-weight: 300;
-  cursor: pointer;
+// const DownloadBtn = styled(Link)`
+//   color: white;
+//   background-color: transparent;
+//   border: 1px solid #5d37bd !important;
+//   font-size: 14px;
+//   padding: 10px 55px;
+//   font-family: "Monserrat", sans-serif;
+//   font-weight: 300;
+//   cursor: pointer;
 
-  &:hover {
-    background-color: white;
-    color: #5d37bd;
-    font-weight: 600;
-  }
+//   &:hover {
+//     background-color: white;
+//     color: #5d37bd;
+//     font-weight: 600;
+//   }
 
-  @media screen and (max-width: 768px) {
-    width: 100px;
-  }
-`;
+//   @media screen and (max-width: 768px) {
+//     width: 100px;
+//   }
+// `;
 
 const TopContent = () => {
   return (
     <TopContentCss>
       <TopContentContainer>
-        {/* <iframe src={pdf} type="application/pdf" height={500} width={300} /> */}
         <h1>Hi,</h1>
         <h1>
           I'm <span>Gokul</span>
         </h1>
+
         <h2>A FreeLancing Frontend Developer</h2>
-        <ButtonGrp>
-          <a href={pdf} download="Gokul-resume.pdf">
-            <DownloadBtn>Resume</DownloadBtn>
+
+        <div className="buttonGrp">
+          <a className="downloadBtn" href={pdf} download="Gokul-resume.pdf">
+            Resume
           </a>
           <Link to="projects" smooth={true} duration={500}>
             <Button>My Work</Button>
           </Link>
-        </ButtonGrp>
+        </div>
       </TopContentContainer>
     </TopContentCss>
   );
