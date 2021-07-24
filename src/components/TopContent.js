@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
-import pdf from "../resume.pdf";
+import pdf from "../gokul-resume.pdf";
 import "./TopContent.css";
 
 const TopContentCss = styled.div`
