@@ -3,7 +3,7 @@ import Project from "./Project";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 import realestate from "../images/realestate.png";
-import portfolio from "../images/portfolio.png";
+// import portfolio from "../images/portfolio.png";
 import oyo from "../images/oyo.png";
 import tesla from "../images/tesla.png";
 import snn from "../images/snn.png";
