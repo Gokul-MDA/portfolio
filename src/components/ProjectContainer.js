@@ -6,6 +6,7 @@ import realestate from "../images/realestate.png";
 import portfolio from "../images/portfolio.png";
 import oyo from "../images/oyo.png";
 import tesla from "../images/tesla.png";
+import snn from "../images/snn.png";
 
 const ProjectContainerCss = styled.div`
   display: flex;
@@ -69,10 +70,10 @@ const ProjectContainerProjects = styled.div`
 const ProjectContainer = () => {
   const projects = [
     {
-      img: portfolio,
+      img: snn,
       title: "PortFolio Website for frontEndDev",
       desc: "My Portfolio site, Responsive for both mobile and computer",
-      link: "https://gokul-portfolio.netlify.app",
+      link: "https://snn-global.netlify.app",
     },
     {
       img: realestate,
